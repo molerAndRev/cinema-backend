@@ -1,4 +1,4 @@
-package com.moler.cinema.Service;
+package com.moler.cinema.service;
 
 public interface HallService {
 }

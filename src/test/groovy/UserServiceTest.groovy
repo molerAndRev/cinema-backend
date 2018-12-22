@@ -1,10 +1,9 @@
-import com.moler.cinema.Service.UserService
-import com.moler.cinema.Service.UserServiceImpl
+import com.moler.cinema.service.UserService
+import com.moler.cinema.service.UserServiceImpl
 import com.moler.cinema.entity.Users
 import com.moler.cinema.entity.builder.UsersBuilder
 import com.moler.cinema.repository.UserRepository
 import com.moler.cinema.requests.UserRegisterRequest
-import org.springframework.beans.factory.annotation.Autowired
 import spock.lang.Specification;
 
 class UserServiceTest extends Specification {
