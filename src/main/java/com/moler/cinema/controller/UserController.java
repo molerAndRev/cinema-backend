@@ -1,6 +1,6 @@
 package com.moler.cinema.controller;
 
-import com.moler.cinema.Service.UserService;
+import com.moler.cinema.service.UserService;
 import com.moler.cinema.requests.UserRegisterRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

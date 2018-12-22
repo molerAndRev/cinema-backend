@@ -1,6 +1,8 @@
 package com.moler.cinema.entity;
 
-import javafx.beans.DefaultProperty;
+
+
+import lombok.Builder;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -11,7 +13,7 @@ import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-
+@Builder
 @Entity
 @Table(name = "user")
 public class Users {
@@ -31,12 +33,6 @@ public class Users {
     private Integer active;
     private Timestamp creationDate;
 
-    public Users(String firstName, String lastName, String email, String phone) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.phone = phone;
-    }
 
     @PrePersist
     public void onPrePersist() {
